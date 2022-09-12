@@ -21,12 +21,60 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
-    <div class="attribution">
+    <main class="main">
+      <article class="profile">
+        <img
+          src="./images/bg-pattern-card.svg"
+          alt=""
+          aria-label="profile card design"
+          class="profile__bg"
+        />
+        <section class="profile__content">
+          <img
+            src="./images/image-victor.jpg"
+            alt="profile pic of Victor Crest"
+            class="profile__pic"
+          />
+          <div class="profile__detail">
+            <h1 class="profile__name">Victor Crest</h1>
+            <span class="profile__age"> 26 </span>
+          </div>
+          <p class="profile__location">London</p>
+
+          <ul class="profile__stat__list">
+            <li class="profile__stat">
+              <strong class="profile__stat__text profile__stat__text--main">
+                80k
+              </strong>
+              <span class="profile__stat__text profile__stat__text--sub">
+                Followers
+              </span>
+            </li>
+            <li class="profile__stat">
+              <strong class="profile__stat__text profile__stat__text--main">
+                803k
+              </strong>
+              <span class="profile__stat__text profile__stat__text--sub">
+                Likes
+              </span>
+            </li>
+            <li class="profile__stat">
+              <strong class="profile__stat__text profile__stat__text--main">
+                1.4k
+              </strong>
+              <span class="profile__stat__text profile__stat__text--sub">
+                Photos
+              </span>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </footer>
   </body>
 </html>
