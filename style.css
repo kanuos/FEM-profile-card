@@ -159,6 +159,7 @@
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--text);
+  text-transform: uppercase;
 }
 
 .profile__stat__text--sub {

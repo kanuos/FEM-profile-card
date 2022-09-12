@@ -68,6 +68,11 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - GitHub Pages as static site hosting platfrom
 
 
+## Links
+
+- [Code Repo](https://github.com/kanuos/FEM-profile-card)
+- [Live Demo](https://kanuos.github.io/FEM-profile-card/) 
+
 ## Author
 
 - Website - [sounakmukherjee.com](https://sounakmukherjee.com)
