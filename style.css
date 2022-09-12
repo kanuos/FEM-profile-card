@@ -1,3 +1,56 @@
+:root {
+    --main: hsl(185, 75%, 39%);
+    --text: hsl(229, 23%, 23%);
+    --text-light: hsl(227, 10%, 46%);
+    --shadow: hsl(0, 0%, 59%);
+    --shadow--light: hsl(229, 20%, 50%);
+    --light : hsl(255, 100%, 100%);
+}
+
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
 * {
+    margin: 0;
     font-family: 'Kumbh Sans', sans-serif;
+}
+
+.main {
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--main);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+
+/* card component */
+.profile {
+    width: 90%;
+    height: 50vh;
+    max-width: 23rem;
+    display: grid;
+    margin: auto;
+    border-radius: 1rem;
+    background-color: var(--light);
+    overflow: hidden;
+    filter: drop-shadow(0 1px 1rem var(--shadow--light));
+}
+
+.profile__bg {
+    width: 100%;
+}
+
+
+
+/* attribution  footer */
+footer.attribution {
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+    pointer-events: none;
+    z-index: -1;
 }
