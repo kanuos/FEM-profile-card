@@ -4,7 +4,7 @@
   --text-light: hsl(227, 10%, 46%);
   --shadow: hsl(0, 0%, 59%);
   --border: hsl(0, 0%, 79%);
-  --drop-shadow: drop-shadow(0 1px 0.25rem var(--shadow));
+  --drop-shadow: drop-shadow(0 -3px 0.5rem var(--shadow), 0 0 0 transparent);
   --light: hsl(255, 100%, 100%);
 }
 
@@ -40,13 +40,13 @@
 }
 
 .pattern--top {
-    left: 0%;
-    top: -50%;
-    transform: translateX(-60%);
+  left: 0%;
+  top: -50%;
+  transform: translateX(-60%);
 }
 
 .pattern--bottom {
-    right: 0%;
+  right: 0%;
   transform: translateX(60%);
   bottom: -50%;
 }
@@ -179,34 +179,34 @@ footer.attribution {
 }
 
 /* media query */
-@media screen and (min-width:640px) {
-    .pattern--top {
-        transform: translateX(-50%);
-    }
-    
-    .pattern--bottom {
-      transform: translateX(50%);
-    }
+@media screen and (min-width: 640px) {
+  .pattern--top {
+    transform: translateX(-50%);
+  }
+
+  .pattern--bottom {
+    transform: translateX(50%);
+  }
 }
 
-@media screen and (min-width:768px) {
-    .pattern--top {
-        transform: translateX(-40%);
-    }
-    
-    .pattern--bottom {
-      transform: translateX(40%);
-    }
+@media screen and (min-width: 768px) {
+  .pattern--top {
+    transform: translateX(-40%);
+  }
+
+  .pattern--bottom {
+    transform: translateX(40%);
+  }
 }
 
-@media screen and (min-width:1024px) {
-    .pattern--top {
-        transform: translate(-25%, -10%);
-        height: 125%;
-    }
-    
-    .pattern--bottom {
-      transform: translate(25%, 10%);
-      height: 125%;
-    }
+@media screen and (min-width: 1024px) {
+  .pattern--top {
+    transform: translate(-25%, -10%);
+    height: 125%;
+  }
+
+  .pattern--bottom {
+    transform: translate(25%, 10%);
+    height: 125%;
+  }
 }
