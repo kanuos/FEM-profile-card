@@ -3,8 +3,11 @@
     --text: hsl(229, 23%, 23%);
     --text-light: hsl(227, 10%, 46%);
     --shadow: hsl(0, 0%, 59%);
-    --shadow--light: hsl(229, 20%, 50%);
+    --shadow--light: hsl(229, 20%, 60%);
+    --shadow--dark: hsl(229, 20%, 80%);
     --light : hsl(255, 100%, 100%);
+    --drop-shadow : drop-shadow(0 1px .25rem var(--shadow--light));
+    --drop-shadow--dark : drop-shadow(0 1px .25rem var(--shadow--dark));
 }
 
 /*
@@ -31,18 +34,27 @@
 .profile {
     width: 90%;
     height: 50vh;
+    min-height: 28rem;
     max-width: 23rem;
-    display: grid;
     margin: auto;
+    display: grid;
+    place-items: end;
     border-radius: 1rem;
-    background-color: var(--light);
+    background-image: url(./images/bg-pattern-card.svg) , linear-gradient(var(--light), var(--light));
     overflow: hidden;
-    filter: drop-shadow(0 1px 1rem var(--shadow--light));
+    filter: var(--drop-shadow);
 }
 
-.profile__bg {
+.profile-container {
+    height: 70%;
     width: 100%;
+    min-height: 18rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--light);
 }
+
 
 
 
