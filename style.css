@@ -24,16 +24,39 @@
   height: 100%;
   min-height: 100vh;
   background-color: var(--main);
+  position: relative;
   overflow: hidden;
   display: grid;
   place-items: center;
 }
 
+/* patterns */
+.pattern {
+  position: fixed;
+  height: 100%;
+  width: auto;
+  display: block;
+  z-index: 0;
+}
+
+.pattern--top {
+    left: 0%;
+    top: -50%;
+    transform: translateX(-60%);
+}
+
+.pattern--bottom {
+    right: 0%;
+  transform: translateX(60%);
+  bottom: -50%;
+}
+
 /* card component */
 .profile {
-  height: 25rem;
+  height: 27rem;
   width: 22rem;
   margin: auto;
+  z-index: 1;
   display: grid;
   place-items: end;
   border-radius: 1rem;
@@ -153,4 +176,37 @@ footer.attribution {
   scale: 0;
   pointer-events: none;
   z-index: -1;
+}
+
+/* media query */
+@media screen and (min-width:640px) {
+    .pattern--top {
+        transform: translateX(-50%);
+    }
+    
+    .pattern--bottom {
+      transform: translateX(50%);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .pattern--top {
+        transform: translateX(-40%);
+    }
+    
+    .pattern--bottom {
+      transform: translateX(40%);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .pattern--top {
+        transform: translate(-25%, -10%);
+        height: 125%;
+    }
+    
+    .pattern--bottom {
+      transform: translate(25%, 10%);
+      height: 125%;
+    }
 }
